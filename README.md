@@ -116,6 +116,8 @@ Code Description
 
 ### Finding tokens considering its color ###
 
+In order to accomplish the task, the robot needs to determine which token to move toward with considering the token's color.
+
 ```python
 def find_token(color): 
     """
