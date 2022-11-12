@@ -208,4 +208,15 @@ def main():
             turn(+4, 0.25)
 ```
 
+Flowchart
+---------
+
+### Overall ###
+
+![alt text](https://github.com/kazu610/1st_assignment_RT1/blob/main/sr/token.png)
+
+### Move toward it (predefined process) ###
+
+![alt text](https://github.com/kazu610/1st_assignment_RT1/blob/main/sr/token.png)
+
 [sr-api]: https://studentrobotics.org/docs/programming/sr/
