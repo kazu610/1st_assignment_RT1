@@ -116,7 +116,7 @@ Code Description
 
 ### Finding tokens considering its color ###
 
-In order to accomplish the task, the robot needs to determine which token to move toward with considering the token's color.
+In order to accomplish the task, the robot needs to determine which token to move toward with considering the token's color. The argument `color` gives this function which color to find. Checking if a token has already been reached with arrays `fin_silver` and `fin_gold`, `find_token(color)` specifies the nearest token. This function returns `dist`, `rot_y` and `num`, distance to the token, angle between the robot's direction and the token and offset number respectively.
 
 ```python
 def find_token(color): 
@@ -152,6 +152,8 @@ def find_token(color):
 
 ### Recornding reached tokens  ###
 
+To distinguish unreached and reached tokens, he robot needs to record offsets of reached tokens. `record(color, num)` function receives the number given by `find_token` function with argument `num`. If argument `color` is `true`, the number is stored in array `fin_silver`. And if it's `false`, the number is stored in array `fin_gold`. 
+
 ```python
 def record(color, num):
     """
@@ -169,6 +171,8 @@ def record(color, num):
 ```
 
 ### Main function ###
+
+The main function execute the task by using above functions. The variable `silver` determines which color token to go. Based on tolerances `d_th` and `a_th`, the robot move toward the target token. If the robot reached all tokens in the environment, the process is terminated with a message **MISSION COMPLETED!**.
 
 ```python
 def main():
