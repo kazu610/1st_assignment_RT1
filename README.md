@@ -105,9 +105,6 @@ Each `Marker` object has the following attributes:
 For example, the following code lists all of the markers the robot can see:
 
 ```python
-markers = R.see()
-print "I can see", len(markers), "markers:"
-
 for token in R.see():
         if token.dist < dist and token.info.marker_type is MARKER_TOKEN_SILVER:
             ...
