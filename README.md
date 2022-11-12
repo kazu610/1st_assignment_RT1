@@ -213,7 +213,7 @@ Flowchart
 
 ### Overall ###
 
-![alt text](https://github.com/kazu610/1st_assignment_RT1/blob/main/Pics/function.png)
+![alt text](https://github.com/kazu610/1st_assignment_RT1/blob/main/Pics/overall.png)
 
 ### Move toward it (predefined process) ###
 
